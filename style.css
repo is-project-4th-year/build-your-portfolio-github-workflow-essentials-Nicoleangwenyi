@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: #c785d2;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;  
+}
+.navlist a{
+    color: white;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;   
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #954d79 0%, #70385c 28.53%, #391338 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+section{
+    padding: 80px 7%;
+}
+
+.hero-text h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text p{
+    color: white;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+.hero-img{
+    width: 700px;
+    height: auto;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+.icons i:hover{
+    color: #4d9559;
+    transform: translateY(-5px);
+}
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+
+    }
+}
+@media (max-width: 1340px){
+    .hero-img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1 rem;
+        grid-template-columns: 1fr;
+    } 
+    .icons{
+        display: none;
+    }
+    .scroll-down {
+        display: none;
+    }
+}
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 7px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    #menu-icon{
+        display: block;
+    }
+    .hero-img img{
+       width: 100%; 
+       height: auto;
+    }
+}
+
+.about-section {
+        background: linear-gradient(245.59deg, #954d79 0%, #70385c 28.53%, #391338 75.52%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-card img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    max-width: 600px;
+}
+
+.text h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffd6f5;
+}
+
+.text p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f9e1f4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-card.reverse {
+        flex-direction: column;
+    }
+
+    .about-card img {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(245.59deg, #954d79 0%, #70385c 28.53%, #391338 75.52%);
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contain .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contain .contactInfo .box{
+    position: relative;
+    padding: 20px 0 ;
+    display: flex;
+}
+.contain .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contain .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contain .contactInfo .box .text h3{
+    font-weight: 500;
+    color: antiquewhite;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px;
+    pointer-events: none;
+    transition: 0.5%;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #4f9055;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .contain .contactInfo{
+        margin-bottom: 40px;
+    }
+    .contain .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+
+body {
+    background: linear-gradient(245.59deg, #954d79 0%, #70385c 28.53%, #391338 75.52%);
+    color: white;
+}
+
+
+.page-container {
+  display: flex;
+  padding: 60px 5%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  flex: 1 1 250px;
+  max-width: 250px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 60px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ffd6f5;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #f3e1f3;
+}
+.sidebar li:first-child {
+  background: linear-gradient(to right, #ff9ce3, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+
+.projects {
+  flex: 3 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-title {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #ffd6f5;
+  text-align: center;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-info h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ffdcf5;
+}
+
+.project-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #f9e1f4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c785d2;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a150b0;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .page-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .projects {
+    width: 100%;
+  }
+}
