@@ -51,17 +51,19 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 ![Milestones & issues](images/milestones.png)
 This is the nanding page milestone that has completed issues too.
 ### B. Project Board
+![Pull request](images/projectboard.png)
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
 
+- Screenshot of your project board showing the different stages of my project
 ### C. Branching
 
 - Screenshot showing your branch list with meaningful naming.
 
 ### D. Pull Requests
+![Pull request](images/pullrequest.png)
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
 
+Screenshot of a pull request creting with linked issue and project
 ### E. Merge Conflict Resolution
 
 - Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
