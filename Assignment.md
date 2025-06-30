@@ -25,16 +25,41 @@ And how it helped with your personal portfolio project 💻
 
 make it honest—and if it surprised you, even better!
 
-Example format:
 
 **🧠 What I Thought I'd Learn vs What I Actually Learned**
-**1. Concept: Branching**
 
-`Expectation 👀` : I thought branching was just for developers working on big apps—nothing I’d need for a small project.
+**1. Concept: Creating milestones and issues**
 
-`Reality 😅`: Turns out even solo devs need branches! It helped me avoid breaking my main code while testing new designs.
+`Expectation 👀` : I didn't necessarily know what to expect as I never knew what the purpose for those 2 were. I thought they were decorations.
 
-`Impact 💡`: I created a feature branch for my "About Me" section and merged it smoothly into the main branch after testing. Super useful!
+`Reality 😅`: Turns out milestones and issues help you track your work and creater better order in workflow allowing you to know which task is needed of you. 
+
+`Impact 💡`: I created milestones that helped me stay in track while doing the project giving me ease in workflow.
+
+**2. Concept: Merging Branches**
+
+`Expectation 👀` : I expected to know how to merge branches with ease to stop worrying about working on different branches
+
+`Reality 😅`: I't turned out to be an easy process and now I can do it with ease
+
+`Impact 💡`: I was able to work on different branches confidently without having to worry about merge conflicts as I was confident that if I encountered any, I would easily solve them.
+
+
+**3. Concept: Deploying on github pages**
+
+`Expectation 👀` : I thought it would be a tideous process that required so many things
+
+`Reality 😅`: Turns out it is actually very simple and you can easily do this hence making websites and hosting doesn't look impossible anymore
+
+`Impact 💡`: I was able to deploy my portfolio with ease and what a smooth process it was.
+
+**4. Concept: Creating Project board**
+
+`Expectation 👀` : I didn't necessarily know what to expect here. 
+
+`Reality 😅`: Found it facinating and a good way to see which issues are at what stage of development
+
+`Impact 💡`: I't made it easy for me to track which issues were at what stage and also trac what was in progress making keeping track of my workflow easier.
 
 ## 4. Screenshots of Key GitHub Features
 
@@ -56,8 +81,9 @@ This is the nanding page milestone that has completed issues too.
 
 - Screenshot of your project board showing the different stages of my project
 ### C. Branching
+![Branches](images/branches.png)
 
-- Screenshot showing your branch list with meaningful naming.
+- Screenshot of branches in my project
 
 ### D. Pull Requests
 ![Pull request](images/pullrequest.png)
@@ -66,4 +92,4 @@ This is the nanding page milestone that has completed issues too.
 Screenshot of a pull request creting with linked issue and project
 ### E. Merge Conflict Resolution
 
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+I was unable to make a merge conflict issue
